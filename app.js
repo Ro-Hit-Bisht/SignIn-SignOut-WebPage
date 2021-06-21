@@ -1,6 +1,8 @@
 document.getElementById("btnSignup").onclick = slide;
 
+
 function slide() {
+  document.getElementById("title").innerHTML = "User's Sign-up";
   document.getElementsByTagName("span")[0].style.transform = "translateY(0)";
   document.getElementsByTagName("span")[1].style.transform =
     "translateY(-50px)";
@@ -23,6 +25,7 @@ function slide() {
 document.getElementById("btnSignin").onclick = unslide;
 
 function unslide() {
+  document.getElementById("title").innerHTML = "User's Sign-in";
   document.getElementsByTagName("span")[0].style.transform =
     "translateY(-50px)";
   document.getElementsByTagName("span")[1].style.transform = "translateY(0)";
